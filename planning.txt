@@ -1,0 +1,4 @@
+want people to be able to add comments to posts
+want to add tags to post (usually name or experience type)
+
+eventually try to format for phone as well

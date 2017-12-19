@@ -1,0 +1,162 @@
+HTML stands for HyperText Markup Language.
+
+A markup language is a computer language that defines the structure and presentation of raw text. Markup languages work by surrounding raw text with information the computer can interpret, "marking it up" to be processed.
+
+HTML elements are often nested inside one another, with each containing information about the type and structure of the information to be displayed in the browser.
+
+You can let web browsers know that you are using HTML by starting your document with a document type declaration like <!DOCTYPE html>.
+
+We add opening and closing <html> tags to create HTML structure and content.
+
+Parts of an Element:
+HTML Tag - The element name, surrounded by an opening (<) and closing (>) angle bracket. (ex. <p>)
+HTML element (or simply, element) - a unit of content in an HTML document formed by HTML tags and the text or media it contains. (ex. <p>Hello, World!</p>)
+Opening tag - the first HTML tag used to start an HTML element. The tag type is surrounded by opening and closing angle brackets. (ex. <p>)
+Element content - The information (text or other elements) contained between the opening and closing tags of an HTML element. Hello, World!
+Closing tag - the second HTML tag used to end an HTML element. Closing tags have a forward slash (/) inside of them, directly after the left angle bracket. (ex. </p>)
+
+<head> Element
+The <head> element contains the metadata for a web page. Metadata is information about the page that isn't displayed directly on the web page.
+
+<title> Element
+The browser tab displays the title of the page because the title can be specified directly inside of the <head> element, by using a <title> tag.
+
+<body> Element
+Before we can add content that a browser will display, we have to add a body to the HTML file. Only content inside the opening and closing body tags can be displayed to the screen. Once the file has a body, many different types of content – including text, images, and buttons – can be added to the body. The opening body tag (<body>) is placed directly below the closing head tag (</head>), and the closing body tag (</body>) is placed directly above the closing html tag (</html>).
+
+Self-Closing Tag
+Self-closing elements contain all the information the browser needs to render the element inside a single tag. Also, because they are single tags, they cannot wrap around raw text or other elements.
+ex. line break element <br />
+
+HTML Structure
+HTML documents are organized as a collection of parent-child relationships. Since there can be multiple levels of nesting, this analogy can be extended to grandchildren, great-grandchildren and beyond. Understanding this hierarchy is important, because child elements can inherit attributes from their parent element.
+
+<div> Element
+div represents a block-level portion of a document such as a few paragraphs, or an image with its caption
+
+Whitespace in HTML Documents
+The browser ignores whitespace in HTML files when it renders a web page, so it can be used as a tool to make code easier to read and follow.
+
+Indentation in HTML Code
+At the time of writing, the W3C (World Wide Web Consortium) recommends 2 spaces of indentation when writing HTML code.
+
+Comments in HTML Documents
+Comments begin with <!-- and end with -->. Any characters in between will be ignored by your browser.
+
+Headings in HTML
+In HTML, there are six different headings, or heading elements. The following is the list of heading elements available in HTML. They are ordered from largest to smallest in size.
+<h1> - used for main headings. All other smaller headings are used for subheadings.
+<h2>
+<h3>
+<h4>
+<h5>
+<h6>
+
+Text Content Tags in HTML
+If you want to add blocks of text in HTML, you can use a paragraph, div, or span:
+Paragraphs (<p>) simply contain a block of plain text.
+<div>s can contain any text or other HTML elements. They are primarily used to divide HTML documents into sections.
+<span>s contain short pieces of text or other HTML. They are primarily used to wrap small pieces of content that are on the same line as other content and do not break text into different sections. (ex. <span style="color:blue">Self-driving cars</span> will color the text Self-driving cars blue)
+
+Text Style Tags in HTML
+HTML tags <em> and <strong> are used to signal that the text within them should be "emphasized" (italicized) or "strong" (bold).
+
+Line Breaks in HTML
+Self-closing tags; you may see line breaks written as <br /> or <br>. Both are valid break tags.
+Note: Line breaks are not the standard way of manipulating the position of HTML elements, but it's likely that you'll come across them every now and then.
+
+Unordered Lists in HTML
+Can use unordered list tag (<ul>) to create a list of items in no particular order. An unordered list outlines individual list items with a bullet point. The <ul> element cannot hold raw text and cannot automatically format raw text into an unordered list of items. Individual list items must be added to the unordered list using the <li> tag. The <li> or list item tag is used to describe an item in a list.
+ex.
+<ul>
+  <li>Limes</li>
+  <li>Tortillas</li>
+  <li>Chicken</li>
+</ul>
+
+Ordered Lists in HTML
+Ordered lists are like unordered lists, except that each list item is numbered. You can create the ordered list with the <ol> tag and then add individual list items to the list using <li> tags.
+
+Images in HTML
+The <img> tag allows you to add an image to a web page. This is another example of a self-closing tag.
+ex. <img src="image-location.com" />
+The <img> tag has a required attribute called src. The src attribute must be set to the image's source, or the location of the image. In this case, the value of src must be the uniform resource locator (URL) of the image. A URL is the web address or local address where a file is stored. Note that the end of the <img> tag has a forward slash /. Self-closing tags may include or omit the final slash — both will render properly. (side note: attributes provide more information about an element's content. They live directly inside of the opening tag of an element. Attributes are made up of the following two parts: the name of the attribute, the value of the attribute)
+
+Image Alts in HTML
+HTML helps support visually impaired users with the alt attribute. The alt attribute is applied specifically to the <img> element. The value of alt should be a description of the image. The alt attribute is used if an image fails to load on a web page, a user can mouse over the area originally intended for the image and read a brief description of the image. This is made possible by the description you provide in the alt attribute. Visually impaired users often browse the web with the aid of screen reading software. When you include the alt attribute, the screen reading software can read the image's description out loud to the visually impaired user.
+ex. <img src="#" alt="A field of yellow sunflowers" />
+
+Videos in HTML
+the <video> tag requires a src attribute with a link to the video source. The <video> element also requires an opening and a closing tag, unlike an <img> tag. The source must link to a video file, not to a video on another site. The width and height attributes are used to set the size of the video displayed in the browser. The controls attribute instructs the browser to include basic video controls: pause, play and skip. The text, Video not supported, between the opening and closing video tags will only be displayed if the browser is unable to load the video.
+
+Linking Out in HTML
+You can add links to a web page by adding an anchor element <a> and including the text of the link in between the opening and closing tags. In addition, the anchor element also needs the href attribute. This attribute stands for hyperlink reference and is used to link to a file path, or the address to where a file is located.
+ex. <a href="https://www.wikipedia.org/">This Is A Link To Wikipedia</a>
+HTML also allows you to turn nearly any element into a link by wrapping that element with an anchor element. With this technique, it's possible to turn images into links by simply wrapping the <img> element with an <a> element.
+ex. <a href="https://en.wikipedia.org/wiki/Opuntia" target="_blank"><img src="#" alt="A red prickly pear fruit"/></a>
+
+New Page in HTML
+Target attribute: the target attribute specifies where to open the linked document. _blank (opens the linked document in a new window or tab), _self (opens the linked document in the same frame as it was clicked (this is default))
+
+Relative in HTML
+When making multi-page static websites, web developers often store HTML files in the root directory, or a main folder where all the files for the project are stored. As the size of the projects you create grows, you may use additional folders within the main project folder to organize your code.
+ex.
+file1.html
+file2.html
+file3.html
+If the browser is currently displaying file1.html, it knows that file2.html and file3.html are in the same folder as file1.html, also referred to as the current folder. Since the browser knows the current folder, other files in the folder can be linked using a relative path.
+A relative path is a filename that shows the path to a local file (a file on the same website, such as ./file1.html) versus an absolute path (a full url, like www.codecademy.com/learn/ruby which is stored in a different folder). The ./ in ./file1.html tells the browser to look for the file in the current folder.
+
+Same Page in HTML
+In order to link to a target on the same page, we must give the target an id, like this:
+<p id="top"> This is the top of the page! </p>
+<h1 id="bottom">This is the bottom! </h1>
+An id should be descriptive to make it easier to remember the purpose of a link. The target link is a string containing the # character and the target element's id.
+<ol>
+  <li><a href="#top">Top</a></li>
+  <li><a href="#bottom">Bottom</a></li>
+</ol>
+** for ID: <div id="introduction">
+
+Navigation in HTML
+Linking to elements on the same page or to other pages on the same site is called navigation. HTML has a special tag called <nav> that is used to wrap these links in order to organize the content on your web page.
+Some of the tags we have used, such as <div>, are called non-semantic tags. This means that they do not describe the content that is inside of them. However, many tags are used to describe the content that they surround, which helps us modify and style our content later. These are called semantic tags and <nav> is one of them!
+
+Tables in HTML
+table tag: <table></table>
+The first step in entering data into the table is to add rows using the table row element: <tr>.
+Rows aren't sufficient to add data to a table. Each cell element must also be defined. In HTML, you can add data using the table data element: <td>.
+To add titles to rows and columns, you can use the table heading element: <th>.
+Must add a blank heading, because it creates the extra table cell necessary to align the table headings correctly over the data they correspond to.
+the use of the scope attribute has one of two values: row - this value makes it clear that the heading is for a row, and col - this value makes it clear that the heading is for a column.
+ex. <th scope="row">Temperature</th>
+
+Table Borders in HTML
+border attribute, which is a deprecated method, or use CSS, which is standard
+
+Spanning Columns in HTML
+Data can span columns using the colspan attribute. The attributes accepts an integer (greater than or equal to 1) to denote the number of columns it spans across.
+ex. <td colspan="2">Strike Fitness</td>
+
+Spanning Rows in HTML
+Data can also span multiple rows using the rowspan attribute. The rowspan attribute is used for data that spans multiple rows (perhaps an event goes on for multiple hours on a certain day). It accepts an integer (greater than or equal to 1) to denote the number of rows it spans across.
+ex. <td rowspan="2">Strike Fitness</td>
+
+Table Body in HTML
+Long tables can be sectioned off using the table body element: <tbody>. The <tbody> element should contain the all of the table's data, excluding the table headings.
+
+Table Head in HTML
+When a table's body is sectioned off, however, it also makes sense to section off the table's headings using the <thead> element.
+
+Table Footer in HTML
+The bottom part of a long table can also be sectioned off using the <tfoot> element. Footers are often used to contain sums, differences, and other data results.
+
+Styling with CSS in HTML
+You can use CSS to style tables
+ex.
+table, th, td {
+  border: 1px solid black;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-size: 18px;
+}
